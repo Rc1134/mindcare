@@ -31,16 +31,11 @@ MindCare is an AI-powered mental health support platform designed to assist user
 ### 7. **Mood Tracking & Sentiment Analysis**
 - Recognizes user mood trends.
 - Suggests coping strategies and relaxation techniques.
+- Suggests songs to improve mood
 
-### 8. **Beautiful & Accessible UI**
-- Styled using Tailwind CSS for a peaceful and user-friendly experience.
-- Sidebar navigation for easy access to different sections.
 
-## Tech Stack
-- **Backend**: Flask
-- **Frontend**: HTML, Tailwind CSS
-- **AI Models**: Hugging Face (Mistral 7B LLM)
-- **Database**: SQLite/PostgreSQL
+
+**Made using streamlit and langchain**
 
 ## Installation & Setup
 
