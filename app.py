@@ -12,6 +12,8 @@ from sklearn.metrics.pairwise import cosine_similarity
 from PIL import Image
 from dotenv import load_dotenv
 load_dotenv()
+hf_token = os.getenv("HF_TOKEN")
+print("Hugging Face Token:", hf_token)
 
 # Initialize session state variables if they don't exist
 if 'authenticated' not in st.session_state:
@@ -105,15 +107,15 @@ def load_embedding_model():
         return None
 
 # Initialize Hugging Face client
-hf_token = os.getenv("HF_TOKEN")
 @st.cache_resource
 def init_hf_client():
     try:
         # Replace with your API token in production
         client = InferenceClient(
-            model="mistralai/Mistral-7B-Instruct-v0.2",
-            token=hf_token  # Replace with actual token in production
-        )
+        model="mistralai/Mistral-7B-Instruct-v0.3",
+        token=hf_token
+)
+
         return client
     except Exception as e:
         st.error(f"Error initializing Hugging Face client: {e}")
