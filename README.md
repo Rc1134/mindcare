@@ -35,7 +35,7 @@ MindCare is an AI-powered mental health support platform designed to assist user
 
 
 
-**Made using streamlit and langchain**
+**Made using streamlit ,huggingface, transformers, pandas etc**
 
 ## Installation & Setup
 
